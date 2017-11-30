@@ -21,3 +21,9 @@ include device/yu/jalebi/board/*.mk
 
 # Inherit from proprietary files
 include vendor/yu/jalebi/BoardConfigVendor.mk
+
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
+# Bootanimation optimizations
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true 
